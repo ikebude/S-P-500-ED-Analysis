@@ -1,5 +1,3 @@
-# S&P 500 Expalanatory Data Analysis
-## Background Information
 # 📊 Exploratory Data Analysis of S&P 500 Companies
 
 ## 🧠 Background Information
@@ -20,7 +18,7 @@ The objective of this project is to perform an Exploratory Data Analysis (EDA) o
 
 ## 📁 Data Description
 
-The dataset (`sp500_companies.csv`) consists of 502 rows and 16 columns, with each row representing a publicly listed company. Below are the columns in the dataset:
+The dataset (`sp500_companies.xlsx`) consists of 502 rows and 16 columns, with each row representing a publicly listed company. Below are the columns in the dataset:
 
 | Column Name           | Description |
 |-----------------------|-------------|
