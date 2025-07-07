@@ -15,6 +15,11 @@ The objective of this project is to perform an Exploratory Data Analysis (EDA) o
 - Exploring geographical distributions of company headquarters.
 - Identifying standout companies and patterns in growth, profitability, and employee size.
 - Preparing insights that can inform investment decisions or further financial modeling.
+- **Data Source**: Manually compiled CSV of S&P 500 companies including financial metrics and metadata.
+- **Tools Used**:  
+  - SQL (MS SQL Server): Data cleaning and preparation  
+  - Python (Pandas, Seaborn, Scikit-learn, Matplotlib): Analysis & Visualization  
+  - Jupyter Notebooks: Documentation and interactivity
 
 ## 📁 Data Description
 
@@ -39,7 +44,7 @@ The dataset (`sp500_companies.xlsx`) consists of 502 rows and 16 columns, with e
 
 ## 🛠️ Deliverables
 
-- A well-commented Jupyter Notebook (`sp500_eda.ipynb`) containing:
+- A well-commented Jupyter Notebook containing:
   - Data cleaning and preparation
   - Univariate and bivariate visualizations
   - Summary statistics
@@ -47,10 +52,17 @@ The dataset (`sp500_companies.xlsx`) consists of 502 rows and 16 columns, with e
 - Summary visualizations (bar charts, histograms, boxplots, etc.)
 - This `README.md` file summarizing the project
 
+## 🧰 Technologies & Libraries
+
+| Tool/Language | Usage |
+|---------------|-------|
+| **SQL (T-SQL)** | Data loading, column cleanup, type conversions |
+| **Pandas** | Data wrangling, feature engineering |
+| **Matplotlib/Seaborn** | Visualizations |
+| **Scikit-learn** | PCA & clustering |
+| **Scipy** | Statistical analysis (Z-score for outliers) |
+
 ## 📌 Summary of Findings
-
-> *(To be updated after analysis)*
-
 Here’s a preview of what we aim to uncover:
 - Top 10 companies by market capitalization
 - Most represented sectors and industries
@@ -59,13 +71,52 @@ Here’s a preview of what we aim to uncover:
 - Noteworthy outliers or trends in financial performance
 
 ## 💡 Key Insights (To Be Prepared)
+Key insights from the EDA include:
+- **Sector Distribution**: Visualization of how companies are distributed across sectors
+- **Top Companies by Market Cap & Employees**: Identification of dominant players
+- **Revenue Growth vs. EBITDA**: Insights into profitability trends
+- **Correlation Heatmap**: Relationships among financial features
 
-> *(These will be added upon completing the analysis, but may include findings such as:)*
 
-- Technology and Healthcare are the most dominant sectors.
-- Companies headquartered in California contribute significantly to the index weight.
-- There is a positive correlation between revenue growth and EBITDA in specific industries.
-- A few companies heavily skew the overall index due to their market cap size.
+## 🧪 Advanced Data Analysis
+
+### 🔹 Feature Engineering
+
+- **Price-to-EBITDA Ratio**
+- **Employees per Market Cap**
+- **Log-transformed Market Cap**
+
+### 🔹 Outlier Detection
+
+- Z-score based anomaly detection flags unusually large or small companies across financial metrics.
+
+### 🔹 Sector Comparisons
+
+- Visual analysis of average financial ratios across sectors gives clues on performance norms.
+
+### 🔹 PCA & Clustering
+
+- Dimensionality reduction reveals latent groupings among companies based on financial traits.
+- Helps in understanding how companies cluster by financial behavior beyond sectors.
+
+## 💼 Author
+
+**Precious Chidiebere Ikebude**  
+[GitHub](https://github.com/ikebude) | [Portfolio](https://www.datascienceportfol.io/ikebude) | [Upwork Profile](https://www.upwork.com/freelancers/~017b5ef2fbb723606e)
+
+A BI Developer and Data Analyst passionate about business insights, predictive modeling, and automation.
+
+---
+
+## 🚀 Future Work
+
+- Time-series analysis with quarterly financials  
+- Integration with live APIs (e.g., Yahoo Finance or Alpha Vantage)  
+- Deployment of an interactive dashboard using Streamlit or Power BI
+
+## 📌 License
+
+This project is open-source and available under the MIT License.
 
 ---
 
